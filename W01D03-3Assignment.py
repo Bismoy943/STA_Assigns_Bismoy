@@ -1,4 +1,3 @@
-#1
 open_price=14581
 high_price=14670
 low_price=14524.4
