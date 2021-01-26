@@ -17,9 +17,11 @@ listvolume=[]
 openlist=[]
 closelist=[]
 len1=len(mdlist)
+pricerange=[]
 for i in range(len1):
     openlist.append(mdlist[i][0])
     closelist.append(mdlist[i][3])
+    pricerange.append(mdlist[i][1]-mdlist[i][2])
     len2=len(mdlist[i])
     for j in range(len2):
         if j==len2-2:
@@ -38,6 +40,7 @@ print("Lowest of closing price in list {} is {}"
 print("Highest of volume in list {} is {}".format(listvolume,max(listvolume)))
 print("Lowest of volume in list {} is {}".format(listvolume,min(listvolume)))
 print("Sorted volume list:",sorted(listvolume))
+print("Price range for all days:",pricerange)
 
 
 for i in range(len1):
