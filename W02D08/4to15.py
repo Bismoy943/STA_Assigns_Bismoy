@@ -21,7 +21,7 @@ pricerange=[]
 for i in range(len1):
     openlist.append(mdlist[i][0])
     closelist.append(mdlist[i][3])
-    pricerange.append(mdlist[i][1]-mdlist[i][2])
+    pricerange.append(round(mdlist[i][1]-mdlist[i][2],2))
     len2=len(mdlist[i])
     for j in range(len2):
         if j==len2-2:
