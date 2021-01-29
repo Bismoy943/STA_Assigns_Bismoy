@@ -173,8 +173,10 @@ last30closingprices = [13558.15, 13567.85, 13682.7, 13740.7, 13760.55, 13328.4,
                        14371.9, 14238.9]
 
 def smalist(last30closingprices):
-    smalist=[0,0,0,0]
+    smalist=[]
     for i in range(len(last30closingprices)):
+        if i<=3:
+            smalist.append(0)
         if i>3:
             smalist.append(round((sum(last30closingprices[i-4:i+1]))/5,2))
     return smalist
