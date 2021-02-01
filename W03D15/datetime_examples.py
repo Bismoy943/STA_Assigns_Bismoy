@@ -1,5 +1,6 @@
 import datetime
 import pytz
+import time
 print("Year={},month={},day={}".format(datetime.date.today().year,datetime.date.today().month,
                                        datetime.date.today().day))
 now=datetime.datetime.now()
@@ -15,3 +16,8 @@ print("Local time:",now.strftime("%Y/%m/%d,%H:%M:%S"))
 timezonenewyork=pytz.timezone('America/New_York')
 timeinnewyork=datetime.datetime.now(timezonenewyork)
 print("Time in new york:",timeinnewyork.strftime("%Y-%m-%d,%H:%M:%S"))
+
+
+print("Seconds sine epoch:",time.time())
+
+print("Local time:",time.ctime(time.time()))
