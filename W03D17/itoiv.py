@@ -1,14 +1,4 @@
 
-'''
-import numpy as np
-import talib
-sonu=[31.24,24.35,16.04,18.35]
-ndarray=np.array(sonu)
-print(ndarray)
-sma2=talib.SMA(ndarray, timeperiod=2)
-print(sma2)
-'''
-
 import talib as ta
 import numpy as np
 import config as con
