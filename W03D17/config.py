@@ -8,3 +8,4 @@ close=list(nifty50['Close'])
 volume=list(nifty50['Volume'])
 
 
+
