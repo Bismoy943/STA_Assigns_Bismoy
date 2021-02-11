@@ -12,12 +12,12 @@ if __name__=='__main__':
         timeframe=bt.TimeFrame.Days,
         compression=1,
         dtformat=('%Y-%m-%d'),
-        open=1,
-        high=2,
-        low=3,
-        close=4,
-        volume=5,
-        openinterest=6,
+        open=2,
+        high=3,
+        low=4,
+        close=5,
+        volume=6,
+        openinterest=7,
         reverse=False,
         header=0
     )
