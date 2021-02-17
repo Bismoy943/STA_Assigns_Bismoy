@@ -14,6 +14,7 @@ yyyymmdd=[]
 with open("D:/Trading/Backtesting_Course/testdata/Nifty-1D.csv","r") as nifty_spot:
     firstline=True
     for line in nifty_spot:
+        print(line)
         if firstline:
             firstline=False
             continue
@@ -42,4 +43,5 @@ elif rsi[len(rsi)-1]>80:
     print("Nifty is overbought")
 else:
     print("Nifty is neither oversold or overbought")
+
 
