@@ -193,5 +193,3 @@ if __name__ == '__main__':
         print("Starting portfolio value:" + str(cerebro.broker.getvalue()))
         cerebro.run()
         print("Final portfolio value:" + str(cerebro.broker.getvalue()))
-
-
