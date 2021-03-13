@@ -119,7 +119,7 @@ if __name__=='__main__':
     commissions=CommInfo(
         commission=0.001,
         mult=25,
-        margin=60000
+        margin=95000
     )
     cerebro.broker.addcommissioninfo(commissions)
     cerebro.addstrategy(FirstStrategy)
@@ -143,9 +143,9 @@ if __name__=='__main__':
     )
     cerebro.adddata(data)
     # cerebro.adddata(data2)
-    cerebro.addsizer(bt.sizers.FixedSize, stake=25)
+    cerebro.addsizer(bt.sizers.FixedSize, stake=5)
     #cerebro.broker.setcommission(commission=0.001)
-    cerebro.broker.set_cash(2000000.00)
+    cerebro.broker.set_cash(1000000.00)
     print("Starting portfolio value:" + str(cerebro.broker.getvalue()))
     cerebro.run()
     print("Final portfolio value:" + str(cerebro.broker.getvalue()))
