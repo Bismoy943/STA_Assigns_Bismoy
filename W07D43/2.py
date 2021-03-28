@@ -38,6 +38,8 @@ class FirstStrategy(bt.Strategy):
         if order.status in [order.Completed]:
             order_details=f"{order.executed.price},Cost:{order.executed.value},Comm {order.executed.comm}"
             if order.isbuy():
+
+
                 self.log("Time:"+str(self.datetime.datetime(0)))
                 self.log(f"BUY EXECUTED,Price: {order_details}")
                 if self.buystoporder is None:
