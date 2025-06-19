@@ -1,0 +1,1 @@
+sh -x /CTRLFW/FDP/dev3/daas/pyspark_scripts/fdp_daas_new_version.sh dev3 2024-09-30 ACCT ACCT-EBBS-ACCOUNT_ALL ALL 'ods_val=2024-09-30;country_val=ZA;tp_sys_val=EBBS;process_id_val=ACCT-EBBS-ACCOUNT_ALL' dummy daily
